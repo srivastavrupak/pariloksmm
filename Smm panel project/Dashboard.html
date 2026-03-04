@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard | SMM Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>User Dashboard</h2>
+    <nav>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+<div class="balance-box">
+    <h3>Your Balance: ₹<span id="balance">0</span></h3>
+</div>
+
+<div class="container">
+
+    <!-- ORDER SECTION -->
+    <div class="order-box">
+        <h3>Place Order</h3>
+
+        <select id="service">
+            <option value="">Select Service</option>
+            <option value="15">Instagram Followers (₹250 per 1000)</option>
+            <option value="20">YouTube subscribers (₹4000 per 1000)</option>
+            <option value="10">Facebook followers (₹30 per 1000)</option>
+        </select>
+
+        <input id="link" type="text" placeholder="Profile / Video Link">
+        <input id="qty" type="number" placeholder="Quantity">
+
+        <button onclick="submitOrder()">Submit Order</button>
+    </div>
+
+    <!-- ADD FUND SECTION -->
+    <div class="fund-box">
+        <h3>Add Funds</h3>
+        <input id="fundAmount" type="number" placeholder="Enter Amount (₹)">
+        <button onclick="addFunds()">Add Balance</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
